@@ -1,0 +1,6 @@
+VARIABLE 
+
+void main()
+{ var number=21;
+print(number);
+}

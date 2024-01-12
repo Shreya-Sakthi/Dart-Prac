@@ -1,0 +1,9 @@
+DATA TYPE 
+
+void main()
+{ var pi=3.14;
+print(pi);
+ int a=27;
+ print(a);
+
+}

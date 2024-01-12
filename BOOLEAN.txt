@@ -1,0 +1,11 @@
+BOOLEAN
+
+void main()
+{ dynamic no_of_oranges;
+  bool arethereoranges;
+ arethereoranges=false;
+ print(arethereoranges);
+ no_of_oranges=1;
+ arethereoranges=true;
+ print(arethereoranges);
+}

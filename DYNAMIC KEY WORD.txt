@@ -1,0 +1,7 @@
+DYNAMIC KEY WORD
+
+void main()
+{ dynamic phrase;
+ phrase="hello world!";
+ print(phrase);
+}
