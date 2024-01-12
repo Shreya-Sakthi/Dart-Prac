@@ -1,0 +1,82 @@
+MUSIC PLAYLIST
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct SongNode {
+    string title;
+    string artist;
+    SongNode* next;
+
+    SongNode(string title, string artist) : title(title), artist(artist), next(nullptr) {}
+}; 
+
+class Playlist {
+private:
+    SongNode* head;
+
+public:
+    Playlist() : head(nullptr) {}
+
+    void addSong() {
+        string title, artist;
+        cout << "Enter song title: \n";
+        cin>>title;
+        cout << "Enter artist name: \n";
+        cin>>artist;
+
+        SongNode* newSong = new SongNode(title, artist);
+        newSong->next = head;
+        head = newSong;
+
+        cout << "Song added successfully!\n";
+    }
+
+    void displayPlaylist() {
+        if (head == nullptr) {
+            cout << "Playlist is empty.\n";
+            return;
+        }
+
+        cout << "Your Playlist:\n";
+        SongNode* curr = head;
+        int count = 1;
+        while (curr != nullptr) {
+            cout << count << ". " << curr->title << " by " << curr->artist << endl;
+            curr = curr->next;
+            count++;
+        }
+    }
+};
+
+int main() {
+    Playlist myPlaylist;
+
+    int choice;
+    do {
+        cout << "\nPlaylist Menu:\n";
+        cout << "1. Add song\n 2. Display playlist\n 3. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                
+                myPlaylist.addSong();
+                break;
+            case 2:
+                myPlaylist.displayPlaylist();
+                break;
+            case 3:
+
+                cout << "Exiting...\n";
+                break;
+            default:
+                cout << "Invalid choice. Please try again.\n";
+        }
+    } while (choice != 3);
+
+    return 0;
+}
