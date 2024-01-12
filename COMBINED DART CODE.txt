@@ -1,0 +1,24 @@
+COMBINED DART CODE
+
+void main()
+{ var stud_name="shreya";
+  print("name: $stud_name");
+ dynamic stud_age;
+ stud_age=19;
+  print("age: $stud_age");
+ int phn_no=123456789;
+ print("phone no: $phn_no");
+ dynamic mark;
+ mark=91.10;
+  print("mark-1: $mark");
+ mark=95;
+ print("mark-2: $mark");
+ bool can_stud_vote;
+ can_stud_vote=true;
+ print("can the student vote: $can_stud_vote");
+ stud_age=13;
+ can_stud_vote=false;
+ print("can the student vote: $can_stud_vote");
+
+
+}
