@@ -1,0 +1,57 @@
+DART-CALCULATOR
+
+CALCULATOR-DART 
+
+import 'dart:io';
+
+dynamic add(var a,var b)
+ {
+    var c=0;
+    c=a+b;
+   print("sum: $c");
+    return (c);
+  }
+dynamic sub(var a,var b)
+ {
+    var c=0;
+    c=a-b;
+   print("difference: $c");
+    return (c);
+  }
+dynamic mul(var a,var b)
+ {
+    var c=0;
+    c=a*b;
+   print("product: $c");
+    return (c);
+  }
+
+dynamic div(var a,var b)
+ {
+    double c=0;
+    c=a/b;
+   print("quotient: $c");
+    return (c);
+  }
+void main()
+{ var ch;
+   do
+   { print(" 1.addition\n2.subtraction \n3.multiplication \n4.division\n Enter your choice: ");
+   int ch=int.parse(stdin.readLineSync()!);
+   print("Enter the 1st number: ");
+  var x= int.parse(stdin.readLineSync()!);
+   print("Enter the 2nd number: ");
+   var y= int.parse(stdin.readLineSync()!);
+   switch(ch)
+   {
+ case 1: add(x,y);
+ break;
+  case 2:sub(x,y);
+  break;
+  case 3:mul(x,y);
+  break;
+  case 4:div(x,y);
+  break;
+   }
+   }while (ch != null && ch <=4); 
+}
