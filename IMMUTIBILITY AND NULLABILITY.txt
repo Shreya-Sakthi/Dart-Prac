@@ -1,0 +1,12 @@
+IMMUTABILITY
+
+void main()
+{ const pi=3.14;
+ print(pi);
+ final userInput = "planet";
+ print(userInput);
+
+String? mailid;
+print(mailid);
+
+}

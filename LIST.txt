@@ -1,0 +1,15 @@
+LIST
+
+void main()
+{var animals=["dog","cat","monkey"];
+print(animals);
+ final marks=[45,48,35,50];
+ print(marks);
+ final mark1=marks[0];
+ print(mark1);
+ 
+ animals.add("elephant");
+  print(animals);
+ animals.remove("monkey");
+ print(animals);
+}

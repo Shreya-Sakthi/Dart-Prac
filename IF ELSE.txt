@@ -1,0 +1,14 @@
+IF ELSE
+
+void main()
+{ var bird="sparrow";
+ if(bird=="sparrow"|| bird=="pigeon")
+ { print("birds that fly");
+ }
+else if(bird=="ostritch")
+{print("fastest bird");
+}
+ else
+ { print("birds that dont fly");
+ }
+}

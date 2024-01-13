@@ -1,0 +1,15 @@
+MAPS
+
+void main()
+{Map<String, String> type = {
+  'dog': "domestic",
+  'lion': "wild",
+  'cheetah': "wild",
+};
+ print(type);
+ 
+ final dogtype=type["dog"];
+ print(dogtype);
+ type["cat"]="domestic";
+ print(type);
+}
