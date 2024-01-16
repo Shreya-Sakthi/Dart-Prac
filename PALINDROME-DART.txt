@@ -23,7 +23,15 @@ if (length <= 1)
   }
   else
   { 
-      print("$word is a palindrome");
+     print("Enter code :");
+     String code = stdin.readLineSync()!;
+     if (code == String.fromCharCode(length + 96)) 
+{   print("Correct code");
+break;
+} 
+else 
+{  print("Incorrect code");
+}
 }
 }
 }
